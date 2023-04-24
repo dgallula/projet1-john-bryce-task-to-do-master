@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../../fonts/pacifico.ttf') format('truetype'),
+  url('../../fonts/pacifico.woff2') format('woff2'),
+  url('../../fonts/pacifico.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  background: url("../../images/tile.jpg") repeat;
+}
+
+.title-board {
+  font-family: 'Pacifico', 'Arial', serif;
+}
+
+#taskContainer {
+  background: white url("../../images/formbg.jpg") repeat;
+
+  input {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    font-weight: 500;
+  }
+
+  label {
+    font-weight: bold;
+  }
+}
+
+.post-it {
+  background: url("../../images/notebg.png") no-repeat;
+  min-height: 30vh;
+  max-width: 200px;
+  max-height: 250px;
+
+  p {
+    max-width: 150px;
+    max-height: 170px;
+    min-height: 170px;
+    overflow: scroll;
+    font-size: smaller;
+    text-align: justify;
+  }
+
+  p:last-child {
+    font-style: italic;
+    font-size: xx-small;
+  }
+
+  .close-icns {
+    float: right;
+    margin: -3px 5px 5px 5px;
+    font-size: xx-small;
+    color: gray;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}

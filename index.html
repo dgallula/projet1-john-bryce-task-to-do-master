@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="assets/styles/css/bootstrap-glyph.min.css" />
+    <link rel="stylesheet" href="assets/styles/css/style.css" />
+    <title>Task Board - Js Project 01</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title-board text-center m-5">My Task Board</h1>
+            </div>
+
+            <div id="taskContainer" class="col-12 col-md-10 offset-md-1 p-4">
+                <form>
+                    <div class="col-12 py-0">
+                        <div class="form-group">
+                            <label for="taskDate">Task description : </label>
+                            <input type="textarea" class="form-control" id="taskData" name="taskData"
+                                placeholder="Do something..." required autofocus />
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col">
+                                <label for="taskDate">Due date : </label>
+                                <input type="date" class="form-control" id="taskDate" value="2020-01-01" name="taskDate"
+                                    required />
+                            </div>
+                            <div class="col">
+                                <label for="taskTime">Due time : </label>
+                                <input type="time" class="form-control" id="taskTime" value="00:00" name="taskTime" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mt-3">
+                        <button type="reset" class="btn btn-warning">Reset</button>
+                        <button type="submit" class="btn btn-primary ">Save</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id="postItContainer" class="row p-5"></div>
+    </div>
+    <script type="application/javascript" src="assets/js/scripts.js"></script>
+</body>
+
+</html>
